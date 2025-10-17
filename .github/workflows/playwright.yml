@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       # CHANGED: Using a custom image where dependencies are pre-baked
-      image: ghcr.io/Zain-Ali3830/playwright-tests:latest 
+      image: ghcr.io/Ali3830/playwright-tests:latest 
 
     steps:
       - uses: actions/checkout@v4
