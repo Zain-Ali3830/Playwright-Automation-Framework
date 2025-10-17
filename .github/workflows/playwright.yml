@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       # CHANGED: Using a custom image where dependencies are pre-bake
-      image: ghcr.io/zain-ali3830/Playwright-Automation-Framework:latest
+      image: ghcr.io/zain-ali3830/playwright-automation-framework:latest
 
     steps:
       - uses: actions/checkout@v4
