@@ -11,7 +11,8 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.47.0-jammy
+      image: mcr.microsoft.com/playwright:v1.47.0-jammy # 👈 Playwright Docker image (browsers preinstalled)
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,8 +23,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+      # 👇 Browsers already included in Docker image, so this step is removed
+      # - name: Install Playwright Browsers
+      #   run: npx playwright install --with-deps
 
       - name: Run Playwright tests
         run: npx playwright test
