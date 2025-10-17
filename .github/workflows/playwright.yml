@@ -62,7 +62,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       # ❌ REMOVED: actions/setup-node is not needed as Node is in the custom container
       # ❌ REMOVED: Caching steps are not needed as dependencies are not installed dynamically
       # ❌ REMOVED: Install dependencies (npm ci) is not needed as dependencies are pre-installed in the container
