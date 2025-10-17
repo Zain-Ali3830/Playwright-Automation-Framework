@@ -57,8 +57,8 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     container:
-      # CHANGED: Using a custom image where dependencies are pre-baked
-      image: ghcr.io/zain-ali3830/playwright-tests:latest 
+      # CHANGED: Using a custom image where dependencies are pre-bake
+      image: ghcr.io/zain-ali3830/Playwright-Automation-Framework:latest
 
     steps:
       - uses: actions/checkout@v4
